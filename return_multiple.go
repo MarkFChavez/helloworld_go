@@ -6,8 +6,11 @@ func swap(x, y string) (string, string) {
 	return y, x
 }
 
-func main() {
-	a, b := swap("Mark", "Joel")
+func definitive_swap(x, y string) (string, int) {
+	return y, 24
+}
 
-	fmt.Println(a, b)
+func main() {
+	a, x := definitive_swap("mark", "joel")
+	fmt.Println(a, x)
 }
